@@ -1,9 +1,19 @@
 import React, { useState, useRef } from "react";
 import JoditEditor from "jodit-react";
 import "../css/editor.css";
+import axios from "axios";
+import { Link } from "react-router-dom";
 const Editor = () => {
   const editor = useRef(null);
+  const [value, setValue] = useState({
+    data: null,
+  });
   const [content, setContent] = useState("");
+  const handleSubmit = () => {
+    value.data === null
+      ? alert("Please enter a value")
+      : axios.post("http://localhost:5000/post", value);
+  };
   return (
     <>
       <div className="editor-wrapper">
@@ -18,9 +28,10 @@ const Editor = () => {
             />
           </div>
           <div className="display-content"> {content}</div>
-        <div className="btn-section">
-          <button onclick="handleSubmit"></button>
-        </div>
+          <div className="btn-section">
+            <button onclick={handleSubmit}>Submit</button>
+            <Link to="/post">Go to Post</Link>
+          </div>
         </div>
       </div>
     </>
