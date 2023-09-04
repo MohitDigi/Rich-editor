@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.editor-wrapper {
+  width: 90%;
+  margin: auto;
+}
+.editor-heading {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 1em 0;
+}
+.container {
+  border-radius: 20px;
+  background: lightblue;
+  padding: 2em;
+}
+.editor-section {
+  width: 100%;
+  padding: 3em;
+}
+.display-content {
+  width: 90%;
+  margin: auto;
+  background: #ececec;
+  height: 40vh;
+  padding: 2em;
+  border-radius: 20px;
+}
