@@ -1,19 +1,15 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import JoditEditor from "jodit-react";
 import "../css/editor.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 const Editor = () => {
-  const editor = useRef(null);
-  const [value, setValue] = useState({
-    data: null,
-  });
+ 
   const [content, setContent] = useState("");
   const handleSubmit = () => {
-    value.data === null
-      ? alert("Please enter a value")
-      : axios.post("http://localhost:5000/post", value);
+  return axios.post(console.log(content),"http://localhost:5000/post", content);
   };
+
   return (
     <>
       <div className="editor-wrapper">
@@ -21,7 +17,6 @@ const Editor = () => {
         <div className="container">
           <div className="editor-section">
             <JoditEditor
-              ref={editor}
               value={content}
               tabIndex={1} // tabIndex of textarea
               onChange={(newContent) => setContent(newContent)}
@@ -29,7 +24,7 @@ const Editor = () => {
           </div>
           <div className="display-content"> {content}</div>
           <div className="btn-section">
-            <button onclick={handleSubmit}>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
             <Link to="/post">Go to Post</Link>
           </div>
         </div>

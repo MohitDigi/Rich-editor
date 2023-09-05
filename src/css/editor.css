@@ -30,3 +30,15 @@
   padding: 2em;
   border-radius: 20px;
 }
+btn-section{
+width: 50%;
+margin: auto ;
+}
+ button{
+  margin: 10px;
+  padding: 10px;
+  color: #ececec;
+  background: #000;
+  border: #000;
+  border-radius: 10px;
+}

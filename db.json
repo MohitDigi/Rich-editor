@@ -1,3 +1,6 @@
 {
-  "posts": [{ "id": 1, "data": "<p>hi</p>" }, { "id": 2, "data":"<p>hi</p>" }]
+  "post": [
+    { "id": 1, "data": "<p>hi</p>" },
+    { "id": 2, "data": "<p>hi</p>" }
+  ]
 }

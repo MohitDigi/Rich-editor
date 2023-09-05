@@ -1,19 +1,28 @@
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const Post = () => {
-    // const [data,setData] = useState([]);
-    // useEffect(()=>{
-    //     axios.get().then((res)=>setData(res))
-    // },[])
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const res = axios
+      .get("http://localhost:5000/post")
+      .then((response) => setData(response.data));
+    console.log(data);
+  }, []);
   return (
     <div>
-        hello
-{/* {data.map((item)=>(
-    <div></div>
-))} */}
+      {!data.length ? (
+        <>loading...</>
+      ) : (
+        data.map((post, key) => (
+            <div
+              key={key}
+              dangerouslySetInnerHTML={{ __html: post.data }}
+            ></div>
+        ))
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;
