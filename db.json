@@ -9,20 +9,12 @@
       "data": "<p>hi</p>"
     },
     {
-      "data": "<p>sdfsdfsdfsdfsdfsdfsdf</p>",
+      "data": "<p>dsfdsfgsgsdfg</p>",
       "id": 3
     },
     {
-      "<p>sdss</p>": "",
+      "data": "<p>New Post</p>",
       "id": 4
-    },
-    {
-      "<p>dfdd</p>": "",
-      "id": 5
-    },
-    {
-      "<p>sss</p>": "",
-      "id": 6
     }
   ]
 }

@@ -1,3 +1,13 @@
-.post{
-    padding: 2em;
+.post-container {
+  /* background: linear-gradient(15deg, rgba(168, 146, 146, 0), grey); */
+}
+.post {
+  padding: 1.3em;
+  margin: 25px;
+  border-image-slice: 12 12 12 12;
+  border-image-width: 5px 5px 5px 5px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
+  border-style: solid;
 }
