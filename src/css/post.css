@@ -1,5 +1,22 @@
+body {
+  height: 100vh;
+  background: url("https://static.vecteezy.com/system/resources/previews/011/426/071/non_2x/aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg");
+}
 .post-container {
-  /* background: linear-gradient(15deg, rgba(168, 146, 146, 0), grey); */
+  margin: 2em;
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post-heading {
+  margin-left: 2em;
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(42, 41, 41);
 }
 .post {
   padding: 1.3em;
@@ -10,4 +27,14 @@
   border-image-repeat: repeat repeat;
   border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
   border-style: solid;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.back-btn {
+  margin-left: 3em;
 }
