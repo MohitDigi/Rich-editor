@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "../css/post.css"
 
 const Post = () => {
   const [data, setData] = useState([]);
@@ -15,7 +16,7 @@ const Post = () => {
         <>loading...</>
       ) : (
         data.map((post, key) => (
-            <div
+            <div className="post"
               key={key}
               dangerouslySetInnerHTML={{ __html: post.data }}
             ></div>

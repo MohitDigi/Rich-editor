@@ -1,13 +1,13 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import JoditEditor from "jodit-react";
 import "../css/editor.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 const Editor = () => {
- 
   const [content, setContent] = useState("");
   const handleSubmit = () => {
-  return axios.post(console.log(content),"http://localhost:5000/post", content);
+    axios.post("http://localhost:5000/post", content);
+    setContent("")
   };
 
   return (
